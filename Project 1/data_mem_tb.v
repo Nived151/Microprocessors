@@ -23,23 +23,23 @@ initial clk=0;
 
         r_w = 1;
 
-        address_bus = 8'b0;
-        data_in = 8'b1;
+        address_bus = 8'd0;
+        data_in = 8'd1;
         #100;
 
-        address_bus = 8'b1;
-        data_in = 8'b111;
+        address_bus = 8'd1;
+        data_in = 8'd7;
         #100;
 
         $display("Write Completed");
 
         r_w = 0;
 
-        address_bus = 8'b0;
+        address_bus = 8'd0;
         $display(data_out);
         #100;
 
-        address_bus = 8'b1;
+        address_bus = 8'd1;
         $display(data_out);
         #100;
 
