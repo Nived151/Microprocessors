@@ -11,7 +11,8 @@ data_mem uut(
     .clk(clk),
     .address_bus(address_bus),
     .data_in(data_in),
-    .r_w(r_w)
+    .r_w(r_w),
+    .data_out(data_out)
 );
 
 initial clk=0; 
