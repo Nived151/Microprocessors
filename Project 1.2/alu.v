@@ -7,7 +7,7 @@ input [7:0]B;
 input [7:0]IN;
 input [7:0]INK;
 
-output [7:0]F;
+output reg [7:0]F;
 output N; //negative
 output Z; //zero
 output C; //carry
