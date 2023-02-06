@@ -14,6 +14,9 @@ output C; //carry
 output V; //overflow
 output D; //data_branch
 
-// [7:0]register;
+always @(*) begin
+  case
+end
+
 
 endmodule
