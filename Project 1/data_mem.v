@@ -12,7 +12,7 @@ initial begin
   ram[i] = 0;
 end
 
-always @(posedge clk) begin
+always @(negedge clk) begin
   if (r_w == 1)
   ram[address_bus] <= data_in;
 end
