@@ -14,7 +14,6 @@ output C; //carry
 output V; //overflow
 output D; //data_branch
 
-
 // function select
 always @(*) begin
   case (FS)
