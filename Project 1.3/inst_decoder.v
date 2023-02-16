@@ -17,7 +17,6 @@ output reg OE //output enable
 );
 
 reg [5:0]opcode;
-//MD; BS=2'b00; PS=1'b0; MW=1'b0; MB=1'b0; MA=1'b0; CS=1'b0; OE=1'b0;
 
 parameter NOP = 5'd0;
 parameter ADD= 5'd1;
