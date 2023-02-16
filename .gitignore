@@ -1,3 +1,4 @@
 
 *.out
 Project 1/data_mem_tb.vcd
+*.vcd
