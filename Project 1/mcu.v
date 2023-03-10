@@ -36,8 +36,13 @@ cpu conn2(
     .clk(clk),
     .cpu_input(mcu_input),
     .KB(KB),
+    .Data_in_DM(Data_in_DM_wire),
+    .Inst_in_IM(Inst_in_wire),
     .Output_LSB(Output_LSB),
-    .Output_MSB(Output_MSB)
+    .Output_MSB(Output_MSB),
+    .Address_DM(Address_DM_wire),
+    .Data_out_DM(Data_out_DM_wire),
+    .Address_IM(Address_IM_wire)
 );
 
 
