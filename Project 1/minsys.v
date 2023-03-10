@@ -26,11 +26,17 @@ mcu conn3(
 );
 
 mcu_io conn4(
+    .clk(clk),
+    .rst(rst),
+    .Color(Color_wire),
+    .Grid_Position(Grid_Position_wire),
+    .sw_pos(sw_pos_wire),
     .EIs(EI),
     .SW(SW),
     .vga_cont(vga_cont),
     .Keypad_rows(Keypad_rows),
-    .Keypad_cols(Keypad_cols)
+    .Keypad_cols(Keypad_cols),
+    .Decoded_keyboard(Decoded_keyboard_wire)
 );
 
 endmodule

@@ -1,10 +1,12 @@
-module instruction_memory( addr_in, data_out);
-input [7:0] addr_in;
-output reg [16:0] data_out; //instruction
+module instruction_memory( 
+input [7:0] addr_in,
+output [16:0] data_out);
+
+ //instruction
 reg [16:0]inst_mem[0:255];
 integer i;
 always@(addr_in) begin
- data_out <= inst_mem[addr_in];
+data_out = inst_mem[addr_in];
 end
 initial begin
 inst_mem[0] = 17'h00000; //NOP

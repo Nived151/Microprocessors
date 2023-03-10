@@ -22,8 +22,9 @@ data_memoryfile conn(
     //.rst(rst),
     .data_mem_clk(clk),
     .data_mem_address(Address_DM_wire),
-    .data_mem_data_in(Data_in_DM_wire),
-    .data_mem_data_out(Data_out_DM_wire)
+    .data_mem_data_in(Data_out_DM_wire),
+    .data_mem_wr_rd(rst),
+    .data_mem_data_out(Data_in_DM_wire)
 );
 
 instruction_memory conn1(
